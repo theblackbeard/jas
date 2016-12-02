@@ -1,0 +1,39 @@
+<div class="list card main">
+
+  <div class="item item-avatar">
+    <img ng-src="{{user.photo}}">
+    <h2>{{user.name}}</h2>
+    <p>Desde: {{user.created_at}}</p>
+  </div>
+
+  <div class="item item-body">
+    <p>
+      Um breve biografia será colocada a critério do aluno...
+    </p>
+    <p>
+      <a href="#" class="subdued">{{user.star}} {{ user.star < 2 ? 'Estrela' : 'Estrelas' }}</a>
+      <a href="#" class="subdued">5 Comentarios</a>
+    </p>
+  </div>
+  <div class="item item-body">
+      <p>Residencia : {{user.address.city}}<br>
+      Caronas Recebidas: {{user.registry.rideGet}}<br>
+      Caronas Dadas: {{user.registry.rideTake}}<br>
+      Curso: {{user.course.name}}<br>
+      Previsão de Término: {{user.course.year}}  
+
+
+      </p>
+
+  </div>
+
+</div>
+<div class="list card">
+ <div class="item item-body">
+    <button class="button button-balanced" ng-click="simulation()">
+        Solicitar Carona
+        
+   </button>
+   
+ </div>
+</div>
